@@ -75,7 +75,7 @@
             margin-top: 0;
             margin-bottom: 5px;
             text-align: left;
-            color: #1155cc;
+            color: #990000;
             line-height: 1.3;
             display: block;
         }
@@ -136,7 +136,7 @@
         .legend-item.selected {
             background-color: #e9e9e9;
             font-weight: 600;
-            color: #000000;
+            color: #990000;
         }
         /* カラーシンボルの角を丸くする */
         .legend-color {
@@ -252,7 +252,7 @@
         }
         .explanation-panel h2 {
             font-size: 1.8em;
-            color: #1155cc;
+            color: #990000;
             margin-top: 0;
             margin-bottom: 20px;
             border-bottom: 2px solid #e0e0e0;
@@ -636,7 +636,7 @@
 
 
         let currentViewMode = '最多得票政党'; // '最多得票政党' または選択された政党名
-        let highlightColor = '#1155cc'; // ハイライト用の色を#1155ccに固定
+        let highlightColor = '#990000'; 
 
         // 政党ごとの最大得票率を保持するオブジェクト
         const maxPartyRates = {};
@@ -1114,7 +1114,7 @@ if (firstOppositionParty) {
                 item.classList.add('selected');
 
                 currentViewMode = item.dataset.partyName;
-                // highlightColor は固定の #1155cc のため、ここでの変更は不要
+
                 updateMapStyle(); // 地図のスタイルを更新
                 console.log("Current view mode set to:", currentViewMode);
             });
